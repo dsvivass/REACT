@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import tareas from './samples/tareas.json'
+import Tasks from './components/Tasks'
 
 // Recordando map en javascript normal
 var a = [1, 2, 3]
@@ -16,11 +17,7 @@ class App extends React.Component{
   render() {
     return (
       <div>
-        {this.state.tasks.map((task) => 
-          <p key={task.id}>
-            {task.title} - {task.description}
-          </p>
-        )}
+        <Tasks tasks={this.state.tasks}/>
       </div>
     )
   }
