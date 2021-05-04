@@ -9,7 +9,7 @@
         "id": 1,
         "title": "Task two",
         "description": "Description of task two",
-        "done": false
+        "done": true
     },
     {
         "id": 2,
